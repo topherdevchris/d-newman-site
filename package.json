@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-solidstate",
-  "version": "0.0.2",
-  "description": "Gatsby.js V4 starter template based on Solid State by HTML5 UP",
+  "name": "Willow Wellness",
+  "version": "0.0.1",
+  "description": "Addressing your mental health",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-solidstate.git"
+    "url": "git+https://github.com/topherdevchris/d-newman-site.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Topher",
+    "email": "chris@topherdev.com"
   },
   "dependencies": {
     "gatsby": "^4.2.0",
@@ -16,7 +16,7 @@
     "gatsby-plugin-offline": "^5.2.0",
     "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-sass": "^5.2.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
@@ -40,13 +40,11 @@
     "rimraf": "^3.0.2"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-solidstate"
+    "gatsby"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-solidstate/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-solidstate#readme"
+  "homepage": ""
 }
