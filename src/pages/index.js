@@ -9,6 +9,8 @@ import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
+import picHeadshot from '../assets/images/DNewman_Headshot.jpg';
+import picFlower from '../assets/images/flower 2.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -16,7 +18,7 @@ const IndexPage = () => (
     <section id="banner">
       <div className="inner">
         <div className="logo">
-          <span className="icon fa-diamond"></span>
+          <span className="icon fa-envira"></span>
         </div>
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
@@ -27,16 +29,20 @@ const IndexPage = () => (
       <section id="one" className="wrapper spotlight style1">
         <div className="inner">
           <a href="/#" className="image">
-            <img src={pic1} alt="" />
+            <img src={picHeadshot} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Magna arcu feugiat</h2>
+            <h2 className="major">Dom Newman</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              I am a Licensed Mental Health Counselor looking to empower people
+              to thrive as they face challenges and transitions in life. I take
+              a supportive, empathic, and strengths-based approach and will
+              partner with you as you work towards accomplishing your goals. As
+              your counselor I am invested in your success and will provide you
+              with the unwavering support and non-judgmental safe space you need
+              to be comfortable in the therapeutic process. My therapeutic
+              approach is informed by both my professional and personal
+              experience.
             </p>
             <a href="/#" className="special">
               Learn more
@@ -48,16 +54,15 @@ const IndexPage = () => (
       <section id="two" className="wrapper alt spotlight style2">
         <div className="inner">
           <a href="/#" className="image">
-            <img src={pic2} alt="" />
+            <img src={picFlower} alt="" />
           </a>
           <div className="content">
             <h2 className="major">Tempus adipiscing</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              Are you having trepidations about taking the next step? Never been
+              to therapy before and not sure what to expect? That’s ok! I am
+              happy to speak over the phone and answer any questions you may
+              have.
             </p>
             <a href="/#" className="special">
               Learn more
@@ -66,7 +71,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="three" className="wrapper spotlight style3">
+      {/* <section id="three" className="wrapper spotlight style3">
         <div className="inner">
           <a href="/#" className="image">
             <img src={pic3} alt="" />
@@ -74,11 +79,8 @@ const IndexPage = () => (
           <div className="content">
             <h2 className="major">Nullam dignissim</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              I offer virtual sessions and have flexibility in my schedule. I
+              look forward to speaking with you!
             </p>
             <a href="/#" className="special">
               Learn more
@@ -86,6 +88,7 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+
 
       <section id="four" className="wrapper alt style1">
         <div className="inner">
@@ -158,7 +161,8 @@ const IndexPage = () => (
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
+
     </section>
   </Layout>
 );
