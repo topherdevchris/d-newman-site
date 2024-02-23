@@ -25,11 +25,28 @@
       border: solid 2px _palette(border);
       cursor: default;
       display: inline-block;
-      font-size: 2em;
+      font-size: 2.0em;
       height: 2.25em;
-      line-height: 2.25em;
+      line-height: 3.0em;
       text-align: center;
       width: 2.25em;
+      // font-size: 2.5em;
+      // height: 2.4em;
+      // line-height: 3.5em;
+      // text-align: center;
+      // width: 2.4em;
+      // padding-left:3px;
+      // padding-top:3px;
+      // font-size: 2em;
+      // height: 2.25em;
+      // line-height: 2.25em;
+      // text-align: center;
+      // width: 2.25em;
+
+        img {
+          height: 44px;
+          width: 44px;
+        }
     }
   }
 
@@ -75,7 +92,7 @@
         transparentize(_palette(bg), 0.2),
         transparentize(_palette(bg), 0.2)
       ),
-      url('../images/bg.jpg');
+      url('../images/photo-1567975842439-ed845719a92f.jpeg'); //bg.jpg
 
     background-size: auto, cover;
 

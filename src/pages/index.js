@@ -11,6 +11,7 @@ import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import picHeadshot from '../assets/images/DNewman_Headshot.jpg';
 import picFlower from '../assets/images/flower 2.jpg';
+import branch from '../assets/images/willow-branch-svgrepo-com-whiteoutline.svg'; //willow-branch-svgrepo-com-3  willow-branch-svgrepo-com-bw willow-branch-svgrepo-com-whiteoutline
 
 import config from '../../config';
 const IndexPage = () => (
@@ -18,7 +19,8 @@ const IndexPage = () => (
     <section id="banner">
       <div className="inner">
         <div className="logo">
-          <span className="icon fa-envira"></span>
+          {/* <span className="icon fa-envira" src={branch}></span> */}
+          <span className="icon"><img src={branch}></img></span>
         </div>
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
