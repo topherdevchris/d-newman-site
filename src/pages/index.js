@@ -10,7 +10,8 @@ import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import picHeadshot from '../assets/images/DNewman_Headshot.jpg';
-import picFlower from '../assets/images/flower 2.jpg';
+//import picFlower from '../assets/images/flower 2.jpg'; // budbranchcrop.jpg
+import branchBuds from '../assets/images/budbranchcrop.jpeg';
 import branch from '../assets/images/willow-branch-svgrepo-com-whiteoutline.svg'; //willow-branch-svgrepo-com-3  willow-branch-svgrepo-com-bw willow-branch-svgrepo-com-whiteoutline
 
 import config from '../../config';
@@ -56,7 +57,7 @@ const IndexPage = () => (
       <section id="two" className="wrapper alt spotlight style2">
         <div className="inner">
           <a href="/#" className="image">
-            <img src={picFlower} alt="" />
+            <img src={branchBuds} alt="" />
           </a>
           <div className="content">
             <h2 className="major">Tempus adipiscing</h2>
