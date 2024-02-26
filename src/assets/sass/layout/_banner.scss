@@ -22,14 +22,18 @@
 
     .icon {
       border-radius: 100%;
-      border: solid 2px _palette(border);
+      border: solid 2px _palette(border3);
       cursor: default;
       display: inline-block;
-      font-size: 2.0em;
-      height: 2.25em;
-      line-height: 3.0em;
-      text-align: center;
-      width: 2.25em;
+      color: #f2f4ea;
+
+      // willow image:
+      // font-size: 2.0em;
+      // height: 2.25em;
+      // line-height: 3.0em;
+      // text-align: center;
+      // width: 2.25em;
+
       // font-size: 2.5em;
       // height: 2.4em;
       // line-height: 3.5em;
@@ -37,16 +41,19 @@
       // width: 2.4em;
       // padding-left:3px;
       // padding-top:3px;
-      // font-size: 2em;
-      // height: 2.25em;
-      // line-height: 2.25em;
-      // text-align: center;
-      // width: 2.25em;
 
-        img {
-          height: 44px;
-          width: 44px;
-        }
+      // Orig: 
+      font-size: 2em;
+      height: 2.25em;
+      line-height: 2.25em;
+      text-align: center;
+      width: 2.25em;
+
+      // willow img:
+        // img {
+        //   height: 44px;
+        //   width: 44px;
+        // }
     }
   }
 
@@ -81,16 +88,16 @@
     line-height: 2;
     text-transform: uppercase;
   }
-
-  @include breakpoint('<=large') {
+  // ('<=large')
+  @include breakpoint('>medium') {
     @include padding(7em, 0, (0, 0, _size(wrapper-edges, large) * 0.5, 0));
 
     background-color: _palette(bg);
 
     background-image: linear-gradient(
         to top,
-        transparentize(_palette(bg), 0.2),
-        transparentize(_palette(bg), 0.2)
+        transparentize(_palette(bg), 0.3),
+        transparentize(_palette(bg), 0.8)
       ),
       url('../images/photo-1567975842439-ed845719a92f.jpeg'); //bg.jpg
 

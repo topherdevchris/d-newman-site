@@ -21,7 +21,8 @@ const IndexPage = () => (
       <div className="inner">
         <div className="logo">
           {/* <span className="icon fa-envira" src={branch}></span> */}
-          <span className="icon"><img src={branch}></img></span>
+          {/* <span className="icon"><img src={branch}></img></span> */}
+          <span className="icon fa-leaf"></span>
         </div>
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
