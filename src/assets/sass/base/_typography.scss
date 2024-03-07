@@ -34,6 +34,13 @@
 		}
 	}
 
+	// added to change hover color in header bar only
+	#header a {
+		&:hover {
+			color:	_palette(accent) !important;
+		}
+	}
+
 	a {
 		@include vendor('transition', 'color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out');
 		border-bottom: dotted 1px _palette(fg-light);
@@ -42,7 +49,7 @@
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(fg-bold) !important;
+			color:	_palette(fg-bold) !important;
 		}
 
 		&.special:not(.button) {

@@ -5,10 +5,12 @@
 ///
 
 /* Banner */
-
+// to make text span the page:
+// remove: @include() , .inner {width}
 #banner {
   @include padding(10em, 0, (0, 0, _size(wrapper-edges, large) * -0.5, 0));
-
+  // margin: 0 auto;
+  // width: _size(inner);
   .inner {
     margin: 0 auto;
     width: _size(inner);
@@ -22,10 +24,12 @@
 
     .icon {
       border-radius: 100%;
-      border: solid 2px _palette(border3);
+      border: solid 2px _palette(bg2);
       cursor: default;
       display: inline-block;
-      color: #f2f4ea;
+      color: _palette(bg2);
+
+      //background-color: transparentize(_palette(bg2), 0.3);
 
       // willow image:
       // font-size: 2.0em;
@@ -55,6 +59,18 @@
         //   width: 44px;
         // }
     }
+  }
+
+  .bannerText {
+    //background-color: transparentize(_palette(bg2), 0.1);
+    //padding-left: 2em;
+    color: _palette(bg2); //_palette(accent)
+    h2, p {
+      color: inherit; //_palette(accent)
+      //background-color: _palette(bg);
+    }
+    
+    
   }
 
   h2 {
@@ -88,18 +104,20 @@
     line-height: 2;
     text-transform: uppercase;
   }
-  // ('<=large')
+  // ('<=large')  >medium
   @include breakpoint('>medium') {
     @include padding(7em, 0, (0, 0, _size(wrapper-edges, large) * 0.5, 0));
 
     background-color: _palette(bg);
 
+    /* Remove background image
     background-image: linear-gradient(
         to top,
         transparentize(_palette(bg), 0.3),
         transparentize(_palette(bg), 0.8)
       ),
       url('../images/photo-1567975842439-ed845719a92f.jpeg'); //bg.jpg
+      */
 
     background-size: auto, cover;
 
@@ -108,6 +126,7 @@
     margin-bottom: (_size(wrapper-edges, large) * -1);
   }
 
+  // @include padding(12em, 0, (0, 0, _size(wrapper-edges, medium) * 0.5, 0));
   @include breakpoint('<=medium') {
     @include padding(12em, 3em, (0, 0, _size(wrapper-edges, medium) * 0.5, 0));
 
@@ -118,8 +137,10 @@
     }
   }
 
+  // @include padding(5em, 2em, (0, 0, _size(wrapper-edges, small) * 0.5, 0));
+  // @include padding(5em, 0, (0, 10em, _size(wrapper-edges, small) * 0.5, 0));
   @include breakpoint('<=small') {
-    @include padding(5em, 2em, (0, 0, _size(wrapper-edges, small) * 0.5, 0));
+    @include padding(5em, 2em, (0, 10em, _size(wrapper-edges, small) * 0.5, 0));
 
     margin-bottom: (_size(wrapper-edges, small) * -1);
 

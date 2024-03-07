@@ -24,8 +24,10 @@ const IndexPage = () => (
           {/* <span className="icon"><img src={branch}></img></span> */}
           <span className="icon fa-leaf"></span>
         </div>
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <div className="bannerText">
+          <h2>{config.heading}</h2>
+          <p>{config.subHeading}</p>
+        </div>
       </div>
     </section>
 
